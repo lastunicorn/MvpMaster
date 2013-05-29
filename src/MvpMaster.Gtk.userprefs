@@ -1,0 +1,34 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="MvpMaster.Gtk/WindowBase.cs">
+    <Files>
+      <File FileName="Demo.Gtk/Views/MainWindow.cs" Line="40" Column="3" />
+      <File FileName="Demo.Gtk/Presenters/MainPresenter.cs" Line="28" Column="1" />
+      <File FileName="MvpMaster/PresenterBase.cs" Line="32" Column="3" />
+      <File FileName="Demo.Gtk/Views/IMainView.cs" Line="16" Column="38" />
+      <File FileName="Demo.Gtk/Main.cs" Line="16" Column="1" />
+      <File FileName="MvpMaster.Gtk/WindowBase.cs" Line="54" Column="33" />
+    </Files>
+    <Pads>
+      <Pad Id="ProjectPad">
+        <State expanded="True">
+          <Node name="Demo.Gtk" expanded="True" />
+          <Node name="MvpMaster.Common" expanded="True" />
+          <Node name="MvpMaster.Gtk" expanded="True">
+            <Node name="WindowBase.cs" selected="True" />
+          </Node>
+        </State>
+      </Pad>
+      <Pad Id="ClassPad">
+        <State expanded="True" selected="True" />
+      </Pad>
+      <Pad Id="MonoDevelop.Debugger.WatchPad">
+        <State />
+      </Pad>
+    </Pads>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>

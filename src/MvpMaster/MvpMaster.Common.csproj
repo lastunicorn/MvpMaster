@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{00125AEC-9230-4E3E-9814-E11BFA0511CB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>DustInTheWind.MvpMaster</RootNamespace>
+    <AssemblyName>MvpMaster</AssemblyName>
+    <FileAlignment>512</FileAlignment>
+    <ProductVersion>12.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>False</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Debug\MvpMaster.xml</DocumentationFile>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>True</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <DocumentationFile>bin\Release\MvpMaster.xml</DocumentationFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Services\MvpInfo.cs" />
+    <Compile Include="Services\MvpInitializer.cs" />
+    <Compile Include="Services\UiDispatcher.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="TypeDoesNotRepresentPresenterException.cs" />
+    <Compile Include="IPresenter.cs" />
+    <Compile Include="IPresenter1.cs" />
+    <Compile Include="IView.cs" />
+    <Compile Include="IView1.cs" />
+    <Compile Include="PresenterBase.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Services\IMvpInitializer.cs" />
+    <Compile Include="Services\IPresentersCreator.cs" />
+    <Compile Include="Services\IServiceLocator.cs" />
+    <Compile Include="Services\IUiDispatcher.cs" />
+    <Compile Include="Services\IViewsCreator.cs" />
+    <Compile Include="Services\PresentersCreator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\ViewsCreator.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="ViewAlreadySetException.cs" />
+    <Compile Include="Window\IWindowController.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Window\IWindowPresenter.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Window\IWindowPresenter1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Window\IWindowView.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Window\IWindowView1.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Window\WindowPresenterBase.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

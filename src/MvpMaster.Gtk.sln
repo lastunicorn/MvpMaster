@@ -1,0 +1,45 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvpMaster.Common", "MvpMaster\MvpMaster.Common.csproj", "{00125AEC-9230-4E3E-9814-E11BFA0511CB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvpMaster.Tests", "MvpMaster.Tests\MvpMaster.Tests.csproj", "{BC831D83-DCD1-4271-8658-19F0959ED724}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvpMaster.Gtk", "MvpMaster.Gtk\MvpMaster.Gtk.csproj", "{EF40D75B-D0CB-4AB9-BF5C-AC4F9E27B2CA}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Demo.Gtk", "Demo.Gtk\Demo.Gtk.csproj", "{09B5FEBB-5F25-4792-A0E0-7C0A5485527F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{00125AEC-9230-4E3E-9814-E11BFA0511CB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00125AEC-9230-4E3E-9814-E11BFA0511CB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00125AEC-9230-4E3E-9814-E11BFA0511CB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00125AEC-9230-4E3E-9814-E11BFA0511CB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{09B5FEBB-5F25-4792-A0E0-7C0A5485527F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{09B5FEBB-5F25-4792-A0E0-7C0A5485527F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{09B5FEBB-5F25-4792-A0E0-7C0A5485527F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{09B5FEBB-5F25-4792-A0E0-7C0A5485527F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BC831D83-DCD1-4271-8658-19F0959ED724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BC831D83-DCD1-4271-8658-19F0959ED724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BC831D83-DCD1-4271-8658-19F0959ED724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BC831D83-DCD1-4271-8658-19F0959ED724}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF40D75B-D0CB-4AB9-BF5C-AC4F9E27B2CA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF40D75B-D0CB-4AB9-BF5C-AC4F9E27B2CA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF40D75B-D0CB-4AB9-BF5C-AC4F9E27B2CA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF40D75B-D0CB-4AB9-BF5C-AC4F9E27B2CA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Demo.Gtk\Demo.Gtk.csproj
+		Policies = $0
+		$0.StandardHeader = $1
+		$1.Text = @// MvpMaster\n// Copyright (C) 2013 Dust in the Wind\n// \n// This program is free software: you can redistribute it and/or modify\n// it under the terms of the GNU General Public License as published by\n// the Free Software Foundation, either version 3 of the License, or\n// (at your option) any later version.\n// \n// This program is distributed in the hope that it will be useful,\n// but WITHOUT ANY WARRANTY; without even the implied warranty of\n// MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the\n// GNU General Public License for more details.\n// \n// You should have received a copy of the GNU General Public License\n// along with this program.  If not, see <http://www.gnu.org/licenses/>.
+		$1.IncludeInNewFiles = True
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
