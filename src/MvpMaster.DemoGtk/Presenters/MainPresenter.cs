@@ -15,13 +15,14 @@
 // // along with this program.  If not, see <http://www.gnu.org/licenses/>.
 using DustInTheWind.MvpMaster.Window;
 
-namespace DustInTheWind.MvpMaster.Demo.Gtk
+namespace DustInTheWind.MvpMaster.DemoGtk
 {
-	public interface IMainView : IWindowView<MainPresenter>
+	public class MainPresenter : WindowPresenterBase<IMainView>
 	{
-		string LabelText { set; }
-
-		string InputText { get; }
+		public void Button1Clicked()
+		{
+			View.LabelText = View.InputText;
+		}
 	}
 }
 

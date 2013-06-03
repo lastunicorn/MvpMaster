@@ -23,7 +23,7 @@ namespace DustInTheWind.Azzul.UI.Views
 	/// Base class for a Form in Azzul application.
 	/// </summary>
 	public class WindowBase<TPresenter> : Window, IWindowView<TPresenter>
-        where TPresenter : class, IPresenter
+        where TPresenter : class, IWindowPresenter
 	{
 		/// <summary>
 		/// Gets or sets the Presenter that contains the logic of the <see cref="Form"/>.
@@ -39,12 +39,12 @@ namespace DustInTheWind.Azzul.UI.Views
 			set { Presenter = value as TPresenter; }
 		}
 
-		public WindowBase ()
+		public WindowBase()
             : base (WindowType.Toplevel)
 		{
 		}
 		
-		public WindowBase (WindowType windowType)
+		public WindowBase(WindowType windowType)
 			: base (windowType)
 		{
 		}
@@ -56,7 +56,7 @@ namespace DustInTheWind.Azzul.UI.Views
 		/// the parent is set to null.
 		/// </summary>
 		/// <param name="parent">The parent view for the current form.</param>
-		public void SetParent (IWindowView parent)
+		public void SetParent(IWindowView parent)
 		{
 			//Owner = parent as Form;
 		}
@@ -64,15 +64,15 @@ namespace DustInTheWind.Azzul.UI.Views
 		/// <summary>
 		/// Displays the view.
 		/// </summary>
-		public void ShowView ()
+		public void ShowView()
 		{
-			Show ();
+			Show();
 		}
 
 		/// <summary>
 		/// Displays the view.
 		/// </summary>
-		public void ShowDialogView ()
+		public void ShowDialogView()
 		{
 			//ShowDialog();
 		}
@@ -80,7 +80,7 @@ namespace DustInTheWind.Azzul.UI.Views
 		/// <summary>
 		/// Focuses the view.
 		/// </summary>
-		public void FocusView ()
+		public void FocusView()
 		{
 			//Focus();
 		}
@@ -88,7 +88,7 @@ namespace DustInTheWind.Azzul.UI.Views
 		/// <summary>
 		/// Closes the view.
 		/// </summary>
-		public void CloseView ()
+		public void CloseView()
 		{
 			//Close();
 		}
@@ -96,7 +96,7 @@ namespace DustInTheWind.Azzul.UI.Views
 		/// <summary>
 		/// Hides the view.
 		/// </summary>
-		public void HideView ()
+		public void HideView()
 		{
 			//Hide();
 		}
@@ -104,7 +104,7 @@ namespace DustInTheWind.Azzul.UI.Views
 		/// <summary>
 		/// Sets the result on "Ok" and closes the view.
 		/// </summary>
-		public void CloseViewOk ()
+		public void CloseViewOk()
 		{
 			//DialogResult = DialogResult.OK;
 		}
@@ -112,7 +112,7 @@ namespace DustInTheWind.Azzul.UI.Views
 		/// <summary>
 		/// Sets the result on "Cancel" and closes the view.
 		/// </summary>
-		public void CloseViewCancel ()
+		public void CloseViewCancel()
 		{
 			//DialogResult = DialogResult.Cancel;
 		}

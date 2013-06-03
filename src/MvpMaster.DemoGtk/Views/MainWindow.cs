@@ -13,24 +13,39 @@
 // 
 // You should have received a copy of the GNU General Public License
 // along with this program.  If not, see <http://www.gnu.org/licenses/>.
+using System;
+using DustInTheWind.Azzul.UI.Views;
 using Gtk;
-using DustInTheWind.MvpMaster.Demo.Gtk;
 
-namespace Demo.Gtk
+namespace DustInTheWind.MvpMaster.DemoGtk
 {
-	class MainClass
+	public partial class MainWindow: WindowBase<MainPresenter>, IMainView
 	{
-		public static void Main(string[] args)
+		public string LabelText
 		{
-			Application.Init();
+			set { label1.Text = value; }
+		}
 
-			MainWindow win = new MainWindow();
+		public string InputText
+		{
+			get { return entry1.Text; }
+		}
 
-			MainPresenter presenter = new MainPresenter();
-			presenter.View = win;
+		public MainWindow()
+			: base (WindowType.Toplevel)
+		{
+			Build();
+		}
+	
+		protected void OnDeleteEvent(object sender, DeleteEventArgs e)
+		{
+			Application.Quit();
+			e.RetVal = true;
+		}
 
-			win.Show();
-			Application.Run();
+		protected void OnButton1Clicked(object sender, EventArgs e)
+		{
+			Presenter.Button1Clicked();
 		}
 	}
 }
