@@ -22,7 +22,7 @@ namespace DustInTheWind.MvpMaster.Window
     /// Base class for a Form.
     /// </summary>
     public class FormBase<TPresenter> : Form, IWindowView<TPresenter>
-        where TPresenter : class, IPresenter
+        where TPresenter : class, IWindowPresenter
     {
         /// <summary>
         /// Gets or sets the Presenter that contains the logic of the <see cref="Form"/>.

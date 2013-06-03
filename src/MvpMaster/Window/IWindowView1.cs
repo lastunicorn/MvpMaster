@@ -21,7 +21,7 @@ namespace DustInTheWind.MvpMaster.Window
     /// </summary>
     /// <typeparam name="TPresenter">The type of the presenter that will be associated with the current view.</typeparam>
     public interface IWindowView<TPresenter> : IWindowView, IView<TPresenter>
-        where TPresenter : class, IPresenter
+        where TPresenter : class, IWindowPresenter
     {
     }
 }
